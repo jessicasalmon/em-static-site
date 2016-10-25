@@ -31,10 +31,11 @@
 /* PAGE LAYOUT */
 * {
   color: purple;
+  box-sizing: border-box;
 }
 
 .page-container {
-  background-color: pink;
+  background-color: #eeeeee;
   width: 80%;
   margin: auto;
   border: 4px dotted grey;
