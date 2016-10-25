@@ -34,11 +34,11 @@
 }
 
 .page-container {
-  width: 960px;
-  margin: 0 auto;
+  color: pink;
+  width: 50%;
+  margin: auto;
+
 }
-
-
 
 .logo {
   font-weight: bold;
@@ -49,16 +49,9 @@
 .nav {
   font-weight: bold;
   font-size: 25px;
-  /*float: left;
-  clear: right;*/
-
 }
 
-.social-logo {
-  /*margin-right: 0;*/
-  /*float: left;
-  clear: right;*/
-}
+.social-logo {}
 
 
 .soc-link-text {
@@ -74,6 +67,8 @@
   overflow: auto;
   width: 90%;
 }
+
+/*
 [class*="box-test-"] {
   height: 300px;
   width: 300px;
@@ -95,4 +90,8 @@
 
 .box-test-4 {
   background-color: orange;
+}*/
+
+.footer {
+  border: 3px solid orange;
 }
