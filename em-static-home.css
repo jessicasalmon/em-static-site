@@ -48,21 +48,32 @@
 
 .logo {
   background-color: pink;
-  display: inline;
+  display: inline-block;
+  width: ;
 }
 
 .nav,
 .nav li {
   font-weight: bold;
   font-size: 25px;
-  display: inline;
+  display: inline-block;
   /* issues with inline styles */
   /* cant set width */
   /* whitespace*/
+
+  /* BUT, if we use inline-block we can correct width, but not whitespace*/
 }
 
 .nav li {
   margin-right: 10px;
+  background-color: white;
+}
+
+.nav a {
+  color: blue;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
 }
 
 .social-logo {}
