@@ -42,15 +42,27 @@
 
 }
 
-.logo {
-  font-weight: bold;
-  font-size: 50px;
+.logo-container {
   text-align: center;
 }
 
-.nav {
+.logo {
+  background-color: pink;
+  display: inline;
+}
+
+.nav,
+.nav li {
   font-weight: bold;
   font-size: 25px;
+  display: inline;
+  /* issues with inline styles */
+  /* cant set width */
+  /* whitespace*/
+}
+
+.nav li {
+  margin-right: 10px;
 }
 
 .social-logo {}
