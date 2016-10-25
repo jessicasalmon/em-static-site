@@ -62,18 +62,30 @@
   text-align: right;
 }
 
+.gallery-nav-container {
+    margin: auto;
+
+}
+
 .box-container {
-  margin-left: 0 auto;
-  margin-right: 0 auto;
   border: 3px solid blue;
   overflow: auto;
   width: 90%;
+  margin: auto;
 }
+
+/*.box-container-2 {
+  margin: auto;
+  border: 3px dotted orange;
+  overflow: auto;
+
+! this didn't work - just placed orange border directly alonside it's containing element (box-container)
+}*/
 
 
 [class*="box-test-"] {
-  height: 300px;
-  width: 300px;
+  height: 350px;
+  width: 350px;
   margin: 10px 10px 10px 10px;
   float: left;
 }
