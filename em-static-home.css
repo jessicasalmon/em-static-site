@@ -5,11 +5,13 @@
     clear: both;
     display: block;
 }
+/* my clearfix class */
 
 [class*="col-"] {
     float: left;
     padding: 15px;
     border: 1px solid red;
+    min-height: 1px; /* prevents horiztonal collapse */
 }
 
 .col-1 {width: 8.33%;}
@@ -39,7 +41,6 @@
   width: 80%;
   margin: auto;
   border: 4px dotted grey;
-
 }
 
 .logo-container {
@@ -76,16 +77,19 @@
   padding: 10px 20px;
 }
 
-.social-logo {}
-
-
-.soc-link-text {
-  font-weight: bold;
-  font-size: 25px;
-  text-align: right;
+.social-links {
 }
 
-.gallery-nav-container {
+
+.soc-link-icon {
+  float: right;
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+
+}
+
+/*.gallery-nav-container {
     margin: auto;
 
 }
@@ -95,7 +99,7 @@
   overflow: auto;
   width: 90%;
   margin: auto;
-}
+}*/
 
 /*.box-container-2 {
   margin: auto;
@@ -106,11 +110,13 @@
 }*/
 
 
-[class*="box-test-"] {
+/*[class*="box-test-"] {
   height: 350px;
   width: 350px;
+    float: left;
   margin: 10px 10px 10px 10px;
-  float: left;
+
+  display: table-cell;
 }
 
 .box-test-1 {
@@ -127,8 +133,31 @@
 
 .box-test-4 {
   background-color: orange;
-}
+}*/
 
 .footer {
   border: 3px solid orange;
 }
+
+
+
+/* TRYING TO BUILD IMAGE GRID
+ =================================*/
+
+ .table-container {
+   display: table;
+   /*width: 100%;*/
+ }
+
+ .table-row {
+   display: table-row;
+   background-color: pink;
+ }
+
+ .table-cell {
+   display: table-cell;
+   padding: 10px;
+   height: 350px;
+   width: 350px;
+   border: 1px solid black;
+ }
