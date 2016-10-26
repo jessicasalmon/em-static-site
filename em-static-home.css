@@ -11,7 +11,7 @@
     float: left;
     padding: 15px;
     border: 1px solid red;
-    min-height: 1px; /* prevents horiztonal collapse */
+    min-height: 1px; /* prevents horizontal collapse */
 }
 
 .col-1 {width: 8.33%;}
@@ -32,7 +32,7 @@
 
 /* PAGE LAYOUT */
 * {
-  color: purple;
+  color: #000;
   box-sizing: border-box;
 }
 
@@ -53,37 +53,38 @@
   width: ;
 }
 
-.nav,
-.nav li {
-  font-weight: bold;
-  font-size: 25px;
-  display: inline-block;
-  /* issues with inline styles */
-  /* cant set width */
-  /* whitespace*/
+.nav-bar {
+  padding: 10px;
+}
 
-  /* BUT, if we use inline-block we can correct width, but not whitespace*/
+.nav {
+  display: inline-block;
+  padding: 0;
 }
 
 .nav li {
+  display: inline-block;
   margin-right: 10px;
   background-color: white;
+  font-weight: normal;
+  /*font-size: 25px;*/
+
 }
 
 .nav a {
-  color: blue;
   text-decoration: none;
   display: block;
   padding: 10px 20px;
 }
 
 .social-links {
+  padding: 0;
 }
 
 .soc-link-icon {
   float: right;
-  height: 40px;
-  width: 40px;
+  height: 48px;
+  width: 48px;
   margin-left: 10px;
 
 }
