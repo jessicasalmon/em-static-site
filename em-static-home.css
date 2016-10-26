@@ -80,7 +80,6 @@
 .social-links {
 }
 
-
 .soc-link-icon {
   float: right;
   height: 40px;
@@ -88,52 +87,6 @@
   margin-left: 10px;
 
 }
-
-/*.gallery-nav-container {
-    margin: auto;
-
-}
-
-.box-container {
-  border: 3px solid blue;
-  overflow: auto;
-  width: 90%;
-  margin: auto;
-}*/
-
-/*.box-container-2 {
-  margin: auto;
-  border: 3px dotted orange;
-  overflow: auto;
-
-! this didn't work - just placed orange border directly alonside it's containing element (box-container)
-}*/
-
-
-/*[class*="box-test-"] {
-  height: 350px;
-  width: 350px;
-    float: left;
-  margin: 10px 10px 10px 10px;
-
-  display: table-cell;
-}
-
-.box-test-1 {
-  background-color: pink;
-}
-
-.box-test-2 {
-  background-color: yellow;
-}
-
-.box-test-3 {
-  background-color: green;
-}
-
-.box-test-4 {
-  background-color: orange;
-}*/
 
 .footer {
   border: 3px solid orange;
@@ -146,7 +99,7 @@
 
  .table-container {
    display: table;
-   /*width: 100%;*/
+   width: 100%;
  }
 
  .table-row {
@@ -155,14 +108,78 @@
  }
 
  .table-cell {
-   display: table-cell;
    padding: 20px;
-   height: 350px;
-   width: 350px;
+   /*height: 350px; note: fixed height left makes for funny length when shrinking page
+   width: 350px;*/
+   /*width: 20%;*/
    border: 1px solid black;
+   display: table-cell;
  }
 
+.right-align {
+  text-align: right;
+}
+
+.left-align {
+  text-align: left;
+}
+
  .homepage-image {
-   width: 100%;
+   width: 90%;
    /*height: 100%;*/
  }
+
+
+
+/* EXPERIMENT */
+.col-bkg {
+  background-color: red;
+}
+ /* OLD IMAGE GRID
+ ================================*/
+
+ /*.gallery-nav-container {
+     margin: auto;
+
+ }
+
+ .box-container {
+   border: 3px solid blue;
+   overflow: auto;
+   width: 90%;
+   margin: auto;
+ }*/
+
+ /*.box-container-2 {
+   margin: auto;
+   border: 3px dotted orange;
+   overflow: auto;
+
+ ! this didn't work - just placed orange border directly alonside it's containing element (box-container)
+ }*/
+
+
+ /*[class*="box-test-"] {
+   height: 350px;
+   width: 350px;
+     float: left;
+   margin: 10px 10px 10px 10px;
+
+   display: table-cell;
+ }
+
+ .box-test-1 {
+   background-color: pink;
+ }
+
+ .box-test-2 {
+   background-color: yellow;
+ }
+
+ .box-test-3 {
+   background-color: green;
+ }
+
+ .box-test-4 {
+   background-color: orange;
+ }*/
