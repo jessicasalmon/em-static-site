@@ -459,3 +459,16 @@ template {
 [hidden] {
   display: none;
 }
+
+/* JS custom
+   ========================================================================== */
+
+/**
+ * Remove margins and padding from ul, ol elements
+ */
+
+ ul,
+ ol {
+   margin: 0;
+   padding: 0;
+ }
