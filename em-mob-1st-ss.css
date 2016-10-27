@@ -34,11 +34,11 @@
 * {
   color: #000;
   box-sizing: border-box;
+  /*background-color: #fff;*/
 }
 
 .page-container {
-  /*background-color: #fff;*/
-  width: 100%;                                                     /* NEED RESPONSIVE ADAPTATION (80) */
+  width: 100%;
   margin: auto;
 }
 
@@ -50,7 +50,7 @@
 
 .logo-img {
   display: inline-block;
-  width: 80%;                                                      /* NEED RESPONSIVE ADAPTATION (80-100) */
+  width: 80%;
 }
 
 
@@ -62,8 +62,7 @@
 .nav {
   display: inline-block;
   padding: 0;
-  text-align: center;                                              /* NEED RESPONSIVE ADAPTATION (text-align: none;) */
-
+  text-align: center;
 }
 
 .nav li {
@@ -94,7 +93,6 @@
   height: 48px;
   width: 48px;
   margin-left: 10px;
-
 }
 
 
@@ -103,30 +101,98 @@
   border: 3px solid orange;
 }
 
-
-
-/*.table-container {
-  display: table;
-  width: 100%;
-}*/
-
-/*.table-row {
-  display: table-row;
-}
-
-.table-cell {
-  padding: 20px;
-  display: table-cell;
-}
-
-.right-align {
- text-align: right;
-}
-
-.left-align {
- text-align: left;
-}
-
 .homepage-image {
-  width: 90%;
-}*/
+  width: 100%;
+}
+
+
+/* RESPONSIVE MEDIA QUERIES*/
+@media (min-width: 560px) {
+
+  /* LOGO */
+  .logo-img {
+    display: inline-block;
+    width: 100%;
+  }
+
+  /* SITE NAVIGATION */
+  .nav {
+    text-align: left;
+  }
+
+  .nav li {
+    /* could display as block but strange minimizing behavior*/
+  }
+
+  .nav a {
+    float: left;
+    width: 50%;             /* NEED RESPONSIVE ADAPTATION (reduce/ delete width so buttons stack next to each other )*/
+  }
+
+
+  /* SOCIAL MEDIA ICONS/LINKS */
+
+  .social-links {
+    text-align: right;
+  }
+
+  .soc-link-icon {
+    float: right;
+  }
+
+}
+
+
+@media (min-width: 660px) {
+
+  /* RESPONSIVE GRID */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+
+
+  /* PAGE LAYOUT */
+  .page-container {
+    width: 80%;
+  }
+
+  /* LOGO */
+
+
+  /* HOMEPAGE GALLERY GRID */
+   .table-container {
+    display: table;
+    width: 100%;
+  }
+
+  .table-row {
+    display: table-row;
+  }
+
+  .table-cell {
+    padding: 20px;
+    display: table-cell;
+  }
+
+  .right-align {
+   text-align: right;
+  }
+
+  .left-align {
+   text-align: left;
+  }
+
+  .homepage-image {
+    width: 90%;
+  }
+}
