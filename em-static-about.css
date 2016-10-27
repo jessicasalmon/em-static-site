@@ -1,0 +1,14 @@
+.about-portrait-image {
+  width: 100%;
+}
+
+.left-box-about-image {
+  width: 40%;
+  vertical-align: top;
+}
+
+.right-box-about-text {
+    padding-top: 4px;
+    width: 60%;
+    vertical-align: top;
+}

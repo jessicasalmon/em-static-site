@@ -3,8 +3,9 @@
 <html>
 
 <head>
-  <title>EM static home page</title>
+  <title>EM static About page</title>
   <link rel="stylesheet" type="text/css" href="em-static-home.css" />
+  <link rel="stylesheet" type="text/css" href="em-static-about.css" />
 
   <link rel="stylesheet" type="text/css" href="normalize.css" />
 </head>
@@ -16,7 +17,7 @@
     <!--  site header -->
     <div class="header row">
         <div class="logo-container col-12">
-          <img src="assets/graphics/em-logo.svg" />
+          <a href="em-static-home.html"><img src="assets/graphics/em-logo.svg" /></a>
         </div>
     </div>
 
@@ -26,8 +27,8 @@
       <!-- navigation -->
       <div class="nav col-5">
         <ul>
-          <li><a href="em-static-about.html">About</a></li>
-          <li><a href="em-static-shop.html">Shop</a></li>
+          <li><a href="#em-static-about.html">About</a></li>
+          <li><a href="#em-static-shop.html">Shop</a></li>
         </ul>
       </div>
 
@@ -56,6 +57,8 @@
 
     </div>
 
+<!--  PAGE BODY
+============================================================= -->
     <!-- gallery grid system  -->
     <div class="row">
       <!-- <div class="col-1"></div> -->
@@ -64,21 +67,25 @@
         <div class="table-container">
 
           <div class="table-row">
-            <div class="table-cell right-align">
-              <a href=""><img class="homepage-image" src="assets/homepage-images/1-slytherin-600x600px.png" /></a>
-            </div>
-            <div class="table-cell left-align">
-              <a href=""><img class="homepage-image" src="assets/homepage-images/2-published-work-600x600px.png" /></a>
-            </div>
-          </div>
 
-          <div class="table-row">
-            <div class="table-cell right-align">
-              <a href=""><img class="homepage-image" src="assets/homepage-images/3-cards-comics-600x600px.png" /></a>
+            <div class="table-cell left-box-about-image">
+              <img class="about-portrait-image" src="assets/aboutpage-images/em-self-portrait.png" />
             </div>
-            <div class="table-cell left-align">
-              <a href=""><img class="homepage-image" src="assets/homepage-images/3-cards-comics-600x600px.png" /></a>
+
+            <div class="table-cell right-box-about-text">
+              <div class="about-text">
+                <p>Emily is from Brussels and writes bios for herself in the third person cos it
+                 looks way more professional. She went to London to do a foundation degree in
+                 art &amp; design, instantly hated it, so decided to do a BA in Russian instead and
+                 spent a year living in a commune in the middle of the Russian forest.</p>
+
+                <p>She graduated with a First from University College London in 2014, and now
+                works full-time in an office and draws in her spare time.</p>
+
+                <p>If you&#39;d like to buy a print or card, get in touch at: info@emilymcgovern.com</p>
+              </div>
             </div>
+
           </div>
 
         </div>
@@ -88,6 +95,8 @@
     </div>
 
 
+    <!--  PAGE FOOTER
+    ============================================================= -->
     <div class="row footer">
       <div class="col-12 footer-text">copyright Emily Mcgovern. Made with love and coffee by Jessica Salmon</div>
     </div>
