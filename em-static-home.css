@@ -1,3 +1,15 @@
+@font-face {
+    font-family: "Abadi MT Condensed Light";
+    src: url("//db.onlinewebfonts.com/t/15898c1b4ff12cded84f74a011b62a91.eot");
+    src: url("//db.onlinewebfonts.com/t/15898c1b4ff12cded84f74a011b62a91.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/15898c1b4ff12cded84f74a011b62a91.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/15898c1b4ff12cded84f74a011b62a91.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/15898c1b4ff12cded84f74a011b62a91.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/15898c1b4ff12cded84f74a011b62a91.svg#Abadi MT Condensed Light") format("svg");
+}
+
+
+
 /* RESPONSIVE GRID */
 
 .row::after {
@@ -67,6 +79,8 @@
   margin-right: 10px;
   background-color: white;
   font-weight: normal;
+  font-family: 'Abadi MT Condensed Light', sans-serif;
+  font-size: 32px;
   /*font-size: 25px;*/
 
 }
@@ -74,7 +88,7 @@
 .nav a {
   text-decoration: none;
   display: block;
-  padding: 10px 20px;
+  padding: 6px 20px;
 }
 
 .social-links {
