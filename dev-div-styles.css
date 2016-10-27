@@ -1,0 +1,30 @@
+/* WHILST IN DEV */
+.page-container {
+  border: 4px dotted grey;
+  background-color: #eeeeee;
+}
+
+
+[class*="col-"] {
+  border: 1px solid red;
+}
+
+.nav li {
+  background-color: yellow;
+}
+
+.logo-container {
+  background-color: pink;
+}
+
+.col-bkg {
+  background-color: red;
+}
+
+.table-row {
+  background-color: pink;
+}
+
+.table-cell {
+  border: 1px solid black;
+}
