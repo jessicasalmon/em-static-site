@@ -1,4 +1,4 @@
-/*@font-face {
+@font-face {
     font-family: "Abadi MT Condensed Light";
     src: url("//db.onlinewebfonts.com/t/15898c1b4ff12cded84f74a011b62a91.eot");
     src: url("//db.onlinewebfonts.com/t/15898c1b4ff12cded84f74a011b62a91.eot?#iefix") format("embedded-opentype"),
@@ -7,133 +7,126 @@
     url("//db.onlinewebfonts.com/t/15898c1b4ff12cded84f74a011b62a91.ttf") format("truetype"),
     url("//db.onlinewebfonts.com/t/15898c1b4ff12cded84f74a011b62a91.svg#Abadi MT Condensed Light") format("svg");
 }
-*/
+
+
+/* MOBILE FIRST */
 
 
 
 /* RESPONSIVE GRID */
 
-/*.row::after {
+.row::after {
     content: "";
     clear: both;
     display: block;
-}*/
+}
 /* my clearfix class */
 
-/*[class*="col-"] {
+[class*="col-"] {
     float: left;
     padding: 15px;
-    border: 1px solid red;
-    min-height: 1px; /* prevents horizontal collapse
-}*/
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-
+    min-height: 1px; /* prevents horizontal collapse */
+    width: 100%;
+}
 
 
 /* PAGE LAYOUT */
-/** {
+* {
   color: #000;
   box-sizing: border-box;
 }
 
 .page-container {
-  background-color: #eeeeee;
-  width: 80%;
+  /*background-color: #fff;*/
+  width: 100%;                                                     /* NEED RESPONSIVE ADAPTATION (80) */
   margin: auto;
-  border: 4px dotted grey;
-}*/
+}
 
-/*.logo-container {
+
+/* LOGO */
+.logo-container {
   text-align: center;
-    background-color: pink;
 }
 
 .logo-img {
   display: inline-block;
-  width: ;
-}*/
+  width: 80%;                                                      /* NEED RESPONSIVE ADAPTATION (80-100) */
+}
 
-/*.nav-bar {
+
+/* SITE NAVIGATION */
+.nav-bar {
   padding: 10px;
 }
 
 .nav {
   display: inline-block;
   padding: 0;
+  text-align: center;                                              /* NEED RESPONSIVE ADAPTATION (text-align: none;) */
+
 }
 
 .nav li {
   display: inline-block;
   margin-right: 10px;
-  background-color: white;
   font-family: 'Abadi MT Condensed Light', sans-serif;
   font-size: 32px;
+  float:;                                                               /* NEED RESPONSIVE ADAPTATION (float: left;) */
+  width: 100%;             /* NEED RESPONSIVE ADAPTATION (reduce/ delete width so buttons stack next to each other ) */
+
 }
 
 .nav a {
   text-decoration: none;
   display: block;
   padding: 6px 20px;
-}*/
+}
 
-/*.social-links {
+
+/* SOCIAL MEDIA ICONS/LINKS */
+.social-links {
   padding: 0;
+  text-align: center;                                              /* NEED RESPONSIVE ADAPTATION (text-align: none;) */
 }
 
 .soc-link-icon {
-  float: right;
+  float:;                                                          /* NEED RESPONSIVE ADAPTATION (float: right;) */
   height: 48px;
   width: 48px;
   margin-left: 10px;
 
 }
 
+
+/* FOOTER */
 .footer {
   border: 3px solid orange;
+}
+
+
+
+/*.table-container {
+  display: table;
+  width: 100%;
 }*/
 
+/*.table-row {
+  display: table-row;
+}
 
-
-/* TRYING TO BUILD IMAGE GRID
- =================================*/
-
- /*.table-container {
-   display: table;
-   width: 100%;
- }
-
- .table-row {
-   display: table-row;
-   background-color: pink;
- }
-
- .table-cell {
-   padding: 20px;
-   border: 1px solid black;
-   display: table-cell;
- }
+.table-cell {
+  padding: 20px;
+  display: table-cell;
+}
 
 .right-align {
-  text-align: right;
+ text-align: right;
 }
 
 .left-align {
-  text-align: left;
+ text-align: left;
 }
 
- .homepage-image {
-   width: 90%;
-   /*height: 100%;}*/
+.homepage-image {
+  width: 90%;
+}*/
