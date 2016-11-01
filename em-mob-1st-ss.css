@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
     font-family: "Abadi MT Condensed Light";
     src: url("//db.onlinewebfonts.com/t/15898c1b4ff12cded84f74a011b62a91.eot");
     src: url("//db.onlinewebfonts.com/t/15898c1b4ff12cded84f74a011b62a91.eot?#iefix") format("embedded-opentype"),
@@ -6,12 +6,10 @@
     url("//db.onlinewebfonts.com/t/15898c1b4ff12cded84f74a011b62a91.woff") format("woff"),
     url("//db.onlinewebfonts.com/t/15898c1b4ff12cded84f74a011b62a91.ttf") format("truetype"),
     url("//db.onlinewebfonts.com/t/15898c1b4ff12cded84f74a011b62a91.svg#Abadi MT Condensed Light") format("svg");
-}
+}*/
 
 
 /* MOBILE FIRST */
-
-
 
 /* RESPONSIVE GRID */
 
@@ -69,7 +67,9 @@
   display: inline-block;
   margin-right: 10px;
   font-family: 'Abadi MT Condensed Light', sans-serif;
-  font-size: 32px;
+  font-size: 48px;
+  padding-top: 10px;
+  padding-bottom: 20px;
   float:;                                                               /* NEED RESPONSIVE ADAPTATION (float: left;) */
   width: 100%;             /* NEED RESPONSIVE ADAPTATION (reduce/ delete width so buttons stack next to each other ) */
 
@@ -93,12 +93,17 @@
   height: 48px;
   width: 48px;
   margin-left: 10px;
+  margin: 10px;
 }
 
 
 /* FOOTER */
 .footer {
-  border: 3px solid orange;
+  border-top: 1px solid #eee;
+}
+
+.footer-text {
+  text-align: center;
 }
 
 .homepage-image {
@@ -106,39 +111,49 @@
 }
 
 
+
+
+/* ABOUT PAGE */
+
+.about-portrait-image {
+  width: 100%;
+}
+
+.left-box-about-image {
+  width: 90%;
+  vertical-align: top;
+  margin: auto;
+  }
+
+.right-box-about-text {
+    /*padding-top: 4px;*/
+    padding-top: 20px;
+    width: 80%;
+    vertical-align: top;
+    text-align: justify;
+    margin: auto;
+}
+
+
+
 /* RESPONSIVE MEDIA QUERIES*/
-@media (min-width: 560px) {
+@media(min-width: 560px){
 
-  /* LOGO */
-  .logo-img {
-    display: inline-block;
-    width: 100%;
-  }
 
-  /* SITE NAVIGATION */
-  .nav {
-    text-align: left;
-  }
 
+  /* MEDIA QUERIE UPDATES*/
   .nav li {
-    /* could display as block but strange minimizing behavior*/
+    font-size: 32px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
-  .nav a {
-    float: left;
-    width: 50%;             /* NEED RESPONSIVE ADAPTATION (reduce/ delete width so buttons stack next to each other )*/
-  }
+  /*.footer-text {
+    text-align: left;
+  }*/
 
 
-  /* SOCIAL MEDIA ICONS/LINKS */
 
-  .social-links {
-    text-align: right;
-  }
-
-  .soc-link-icon {
-    float: right;
-  }
 
 }
 
@@ -168,6 +183,35 @@
 
   /* LOGO */
 
+  /* LOGO */
+  .logo-img {
+    display: inline-block;
+    width: 100%;
+  }
+
+  /* SITE NAVIGATION */
+  .nav {
+    text-align: left;
+  }
+
+  .nav li {
+    /* could display as block but strange minimizing behavior*/
+  }
+
+  .nav a {
+    float: left;
+    width: 50%;             /* NEED RESPONSIVE ADAPTATION (reduce/ delete width so buttons stack next to each other )*/
+  }
+
+  /* SOCIAL MEDIA ICONS/LINKS */
+
+  .social-links {
+    text-align: right;
+  }
+
+  .soc-link-icon {
+    float: right;
+  }
 
   /* HOMEPAGE GALLERY GRID */
    .table-container {
@@ -195,24 +239,33 @@
   .homepage-image {
     width: 90%;
   }
-}
 
 
+  /* ABOUT PAGE */
 
 
-/* ABOUT PAGE */
+  .about-portrait-image {
+    width: 100%;
+  }
 
-.about-portrait-image {
-  width: 100%;
-}
-
-.left-box-about-image {
-  width: 40%;
-  vertical-align: top;
-}
-
-.right-box-about-text {
-    padding-top: 4px;
-    width: 60%;
+  .left-box-about-image {
+    width: 40%;
     vertical-align: top;
+    margin: auto;
+    }
+
+  .right-box-about-text {
+      padding-top: 0px;
+      /*padding-top: 20px;*/
+      width: 60%;
+      vertical-align: top;
+      text-align: justify;
+
+
+  }
+
+  .about-text {
+      width: 90%;
+  }
+
 }
