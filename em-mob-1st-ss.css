@@ -1,0 +1,271 @@
+/*@font-face {
+    font-family: "Abadi MT Condensed Light";
+    src: url("//db.onlinewebfonts.com/t/15898c1b4ff12cded84f74a011b62a91.eot");
+    src: url("//db.onlinewebfonts.com/t/15898c1b4ff12cded84f74a011b62a91.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/15898c1b4ff12cded84f74a011b62a91.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/15898c1b4ff12cded84f74a011b62a91.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/15898c1b4ff12cded84f74a011b62a91.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/15898c1b4ff12cded84f74a011b62a91.svg#Abadi MT Condensed Light") format("svg");
+}*/
+
+
+/* MOBILE FIRST */
+
+/* RESPONSIVE GRID */
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/* my clearfix class */
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    min-height: 1px; /* prevents horizontal collapse */
+    width: 100%;
+}
+
+
+/* PAGE LAYOUT */
+* {
+  color: #000;
+  box-sizing: border-box;
+  /*background-color: #fff;*/
+}
+
+.page-container {
+  width: 100%;
+  margin: auto;
+}
+
+
+/* LOGO */
+.logo-container {
+  text-align: center;
+}
+
+.logo-img {
+  display: inline-block;
+  width: 80%;
+}
+
+
+/* SITE NAVIGATION */
+.nav-bar {
+  padding: 10px;
+}
+
+.nav {
+  display: inline-block;
+  padding: 0;
+  text-align: center;
+}
+
+.nav li {
+  display: inline-block;
+  margin-right: 10px;
+  font-family: 'Abadi MT Condensed Light', sans-serif;
+  font-size: 48px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  float:;                                                               /* NEED RESPONSIVE ADAPTATION (float: left;) */
+  width: 100%;             /* NEED RESPONSIVE ADAPTATION (reduce/ delete width so buttons stack next to each other ) */
+
+}
+
+.nav a {
+  text-decoration: none;
+  display: block;
+  padding: 6px 20px;
+}
+
+
+/* SOCIAL MEDIA ICONS/LINKS */
+.social-links {
+  padding: 0;
+  text-align: center;                                              /* NEED RESPONSIVE ADAPTATION (text-align: none;) */
+}
+
+.soc-link-icon {
+  float:;                                                          /* NEED RESPONSIVE ADAPTATION (float: right;) */
+  height: 48px;
+  width: 48px;
+  margin-left: 10px;
+  margin: 10px;
+}
+
+
+/* FOOTER */
+.footer {
+  border-top: 1px solid #eee;
+}
+
+.footer-text {
+  text-align: center;
+}
+
+.homepage-image {
+  width: 100%;
+}
+
+
+
+
+/* ABOUT PAGE */
+
+.about-portrait-image {
+  width: 100%;
+}
+
+.left-box-about-image {
+  width: 90%;
+  vertical-align: top;
+  margin: auto;
+  }
+
+.right-box-about-text {
+    /*padding-top: 4px;*/
+    padding-top: 20px;
+    width: 80%;
+    vertical-align: top;
+    text-align: justify;
+    margin: auto;
+}
+
+
+
+/* RESPONSIVE MEDIA QUERIES*/
+@media(min-width: 560px){
+
+
+
+  /* MEDIA QUERIE UPDATES*/
+  .nav li {
+    font-size: 32px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  /*.footer-text {
+    text-align: left;
+  }*/
+
+
+
+
+}
+
+
+@media (min-width: 660px) {
+
+  /* RESPONSIVE GRID */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+
+
+  /* PAGE LAYOUT */
+  .page-container {
+    width: 80%;
+  }
+
+  /* LOGO */
+
+  /* LOGO */
+  .logo-img {
+    display: inline-block;
+    width: 100%;
+  }
+
+  /* SITE NAVIGATION */
+  .nav {
+    text-align: left;
+  }
+
+  .nav li {
+    /* could display as block but strange minimizing behavior*/
+  }
+
+  .nav a {
+    float: left;
+    width: 50%;             /* NEED RESPONSIVE ADAPTATION (reduce/ delete width so buttons stack next to each other )*/
+  }
+
+  /* SOCIAL MEDIA ICONS/LINKS */
+
+  .social-links {
+    text-align: right;
+  }
+
+  .soc-link-icon {
+    float: right;
+  }
+
+  /* HOMEPAGE GALLERY GRID */
+   .table-container {
+    display: table;
+    width: 100%;
+  }
+
+  .table-row {
+    display: table-row;
+  }
+
+  .table-cell {
+    padding: 20px;
+    display: table-cell;
+  }
+
+  .right-align {
+   text-align: right;
+  }
+
+  .left-align {
+   text-align: left;
+  }
+
+  .homepage-image {
+    width: 90%;
+  }
+
+
+  /* ABOUT PAGE */
+
+
+  .about-portrait-image {
+    width: 100%;
+  }
+
+  .left-box-about-image {
+    width: 40%;
+    vertical-align: top;
+    margin: auto;
+    }
+
+  .right-box-about-text {
+      padding-top: 0px;
+      /*padding-top: 20px;*/
+      width: 60%;
+      vertical-align: top;
+      text-align: justify;
+
+
+  }
+
+  .about-text {
+      width: 90%;
+  }
+
+}
