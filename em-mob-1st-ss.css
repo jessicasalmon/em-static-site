@@ -1,4 +1,7 @@
-/*@font-face {
+/* This stylesheet employs mobile first approach */
+
+/* imports font */
+@font-face {
     font-family: "Abadi MT Condensed Light";
     src: url("//db.onlinewebfonts.com/t/15898c1b4ff12cded84f74a011b62a91.eot");
     src: url("//db.onlinewebfonts.com/t/15898c1b4ff12cded84f74a011b62a91.eot?#iefix") format("embedded-opentype"),
@@ -6,20 +9,23 @@
     url("//db.onlinewebfonts.com/t/15898c1b4ff12cded84f74a011b62a91.woff") format("woff"),
     url("//db.onlinewebfonts.com/t/15898c1b4ff12cded84f74a011b62a91.ttf") format("truetype"),
     url("//db.onlinewebfonts.com/t/15898c1b4ff12cded84f74a011b62a91.svg#Abadi MT Condensed Light") format("svg");
-}*/
+}
 
 
-/* MOBILE FIRST */
+/* FOR ALL PAGES */
 
-/* RESPONSIVE GRID */
+/* PAGE STRUCTURE */
+/* initial structure is one column layout spanning 100% width */
+/* ========================================================================= */
 
+/* clearfix */
 .row::after {
     content: "";
     clear: both;
     display: block;
 }
-/* my clearfix class */
 
+/* sets all columns to width: 100% */
 [class*="col-"] {
     float: left;
     padding: 15px;
@@ -27,12 +33,9 @@
     width: 100%;
 }
 
-
-/* PAGE LAYOUT */
 * {
   color: #000;
   box-sizing: border-box;
-  /*background-color: #fff;*/
 }
 
 .page-container {
@@ -40,6 +43,9 @@
   margin: auto;
 }
 
+
+/* HEADER */
+/* ========================================================================= */
 
 /* LOGO */
 .logo-container {
@@ -52,7 +58,7 @@
 }
 
 
-/* SITE NAVIGATION */
+/* SITE NAV */
 .nav-bar {
   padding: 10px;
 }
@@ -70,9 +76,7 @@
   font-size: 48px;
   padding-top: 10px;
   padding-bottom: 20px;
-  float:;                                                               /* NEED RESPONSIVE ADAPTATION (float: left;) */
-  width: 100%;             /* NEED RESPONSIVE ADAPTATION (reduce/ delete width so buttons stack next to each other ) */
-
+  width: 100%;
 }
 
 .nav a {
@@ -85,11 +89,10 @@
 /* SOCIAL MEDIA ICONS/LINKS */
 .social-links {
   padding: 0;
-  text-align: center;                                              /* NEED RESPONSIVE ADAPTATION (text-align: none;) */
+  text-align: center;
 }
 
 .soc-link-icon {
-  float:;                                                          /* NEED RESPONSIVE ADAPTATION (float: right;) */
   height: 48px;
   width: 48px;
   margin-left: 10px;
@@ -98,6 +101,8 @@
 
 
 /* FOOTER */
+/* ========================================================================= */
+
 .footer {
   border-top: 1px solid #eee;
 }
@@ -106,28 +111,30 @@
   text-align: center;
 }
 
+
+/* HOME PAGE */
+/* ========================================================================= */
+
 /* IMAGE LINKS [in table] */
 .homepage-image {
   width: 100%;
 }
 
 
-
-
 /* ABOUT PAGE */
-
-.about-portrait-image {
-  width: 100%;
-}
+/* ========================================================================= */
 
 .left-box-about-image {
   width: 90%;
   vertical-align: top;
   margin: auto;
-  }
+}
+
+.about-portrait-image {
+  width: 100%;
+}
 
 .right-box-about-text {
-    /*padding-top: 4px;*/
     padding-top: 20px;
     width: 80%;
     vertical-align: top;
@@ -136,32 +143,27 @@
 }
 
 
+/* MEDIA QUERIES */
+/* ========================================================================= */
 
-/* RESPONSIVE MEDIA QUERIES*/
 @media(min-width: 560px){
 
-
-
-  /* MEDIA QUERIE UPDATES*/
   .nav li {
     font-size: 32px;
     padding-top: 0px;
     padding-bottom: 0px;
   }
 
-  /*.footer-text {
-    text-align: left;
-  }*/
-
-
-
-
+  /* end of 560px media query */
 }
 
 
 @media (min-width: 660px) {
 
   /* RESPONSIVE GRID */
+  /* layout switches from 1-column to 12-column responsive grid */
+  /* ================================================================= */
+
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
   .col-3 {width: 25%;}
@@ -176,13 +178,15 @@
   .col-12 {width: 100%;}
 
 
+  /* PAGE STRUCTURE */
+  /* ================================================================= */
 
-  /* PAGE LAYOUT */
   .page-container {
     width: 80%;
   }
 
-  /* LOGO */
+  /* HEADER */
+  /* ================================================================= */
 
   /* LOGO */
   .logo-img {
@@ -190,7 +194,8 @@
     width: 100%;
   }
 
-  /* SITE NAVIGATION */
+
+  /* SITE NAV */
   .nav {
     text-align: left;
   }
@@ -201,8 +206,9 @@
 
   .nav a {
     float: left;
-    width: 50%;             /* NEED RESPONSIVE ADAPTATION (reduce/ delete width so buttons stack next to each other )*/
+    width: 50%;
   }
+
 
   /* SOCIAL MEDIA ICONS/LINKS */
 
@@ -214,8 +220,13 @@
     float: right;
   }
 
-  /* HOMEPAGE GALLERY GRID */
-   .table-container {
+
+  /* HOME PAGE */
+  /* ================================================================= */
+
+  /* GALLERY GRID */
+  /* layout built with css table*/
+  .table-container {
     display: table;
     width: 100%;
   }
@@ -229,6 +240,7 @@
     display: table-cell;
   }
 
+  /* alignment of content within table cells */
   .right-align {
    text-align: right;
   }
@@ -237,36 +249,35 @@
    text-align: left;
   }
 
+  /* width of home page images in table cell*/
   .homepage-image {
     width: 90%;
   }
 
 
   /* ABOUT PAGE */
-
-
-  .about-portrait-image {
-    width: 100%;
-  }
+  /* ================================================================= */
 
   .left-box-about-image {
     width: 40%;
     vertical-align: top;
     margin: auto;
-    }
+  }
+
+  .about-portrait-image {
+    width: 100%;
+  }
 
   .right-box-about-text {
-      padding-top: 0px;
-      /*padding-top: 20px;*/
-      width: 60%;
-      vertical-align: top;
-      text-align: justify;
-
-
+    padding-top: 0px;
+    width: 60%;
+    vertical-align: top;
+    text-align: justify;
   }
 
   .about-text {
-      width: 90%;
+    width: 90%;
   }
 
+/* end of 660px media query */
 }
