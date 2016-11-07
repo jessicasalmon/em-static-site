@@ -1,9 +1,9 @@
-/* WHILST IN DEV */
+/* BACKGROUND COLOURS FOR DEVELOPMENT USE */
+
 .page-container {
   border: 4px dotted grey;
   background-color: #eeeeee;
 }
-
 
 [class*="col-"] {
   border: 1px solid red;
